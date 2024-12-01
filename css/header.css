@@ -1,0 +1,100 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: auto;
+    margin: 1rem 8rem;
+    height: 50%;
+    border: 1px solid #d7d2d2; /* Light gray border */
+    border-radius: 15px; /* Rounded corners for the circular effect */
+}
+
+header .brand-logo {
+    display: flex; /* Ensures horizontal alignment */
+    align-items: center; /* Vertically aligns items within the container */
+    gap: 10px; /* Adds spacing between the logo and text */
+}
+
+header .brand-logo img {
+    display: block; /* Removes extra inline spacing caused by images */
+    height: auto; /* Ensures the images maintain their aspect ratio */
+}
+
+
+.secondary-image{
+    margin-top: 5px;
+}
+
+.app-links{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.app-links span{
+    font-size: 0.9rem;
+    color: #787F88;
+   white-space: nowrap;
+}
+
+.app-badges{
+    display:flex;
+    gap: 10px;
+}
+
+.badge{
+    width: 32px;
+    height: 32px;
+    background: #1E1F23;
+    border-radius: 6px;
+}
+
+.apple-badge{
+    display: block;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.apple-badge:hover{
+   transform: scale(1.05);
+}
+
+.playstore-badge{
+    display: block;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.playstorebadge:hover{
+   transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .app-links span{
+        display: none;
+    }
+
+    header{
+        margin: 1rem 2rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 4rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
